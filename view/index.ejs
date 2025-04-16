@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunstone - Your Doorway to Accountable Education</title>
+   <link rel="stylesheet" href="/css/style6.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="logo">SUNSTONE</div>
+        <nav>
+            <ul>
+                <li><a href="#" class="program-button" id="programButton">Programs</a></li>
+                <div class="container9">
+                    <div class="popup" id="programPopup">
+                        <span class="popup-close" id="closeBtn1">&times;</span>
+                        <ul>
+                            <li><strong>School of Management</strong></li>
+                            <li style="color: #b5a711;">MBA</li>
+                            <li style="color: #b5a711;">BBA</li>
+                            <li style="color: #b5a711;">PGDM</li>
+                            <li style="color: #b5a711 ">Select PGDM</li>
+                            <li style="color: #b5a711; ">B.Sc. in Hospitality</li>
+                            <li style="color: #b5a711;">B.A. in Tourism</li>
+                        </ul>
+                        <ul>
+                            <li><strong>School of Technology</strong></li>
+                            <li style="color: #b5a711;">MCA</li>
+                            <li style="color: #b5a711;">BCA</li>
+                            <li style="color: #b5a711;">B.Tech</li>
+                            <li style="color: #b5a711;">Select B.Tech</li>
+                        </ul>
+                    </div>
+                </div>
+                <li><a href="/view/2.ejs" class="apply-button1">All Colleges</a></li>
+                <li><a href="#" class="apply-button2" id="applyBtn1">Shortlisted Colleges</a></li>
+                <li><a href="/view/3.ejs" class="apply-button3" >Sunstone SELECT</a></li>
+                <li><a href="/view/4.ejs" class="apply-button4">Hire From Sunstone</a></li>
+            </ul>
+        </nav>
+        <button class="apply-button" id="applyBtn4">Apply Now</button>
+
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-content">
+            <span class="popup-close" id="closeBtn">&times;</span>
+            <h2>Welcome to Sunstone!</h2>
+            <p>Please enter your details to register</p>
+            <form id="applicationForm1" method="post" action="" name="applicationForm1" >
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your name">
+
+            <label for="email">Email ID</label>
+            <input type="email" id="email" name="email" placeholder="eg. riya@gmail.com">
+
+            <label for="state">Select State</label>
+            <select id="state" name="state" >
+                <option value="">Select your state</option>
+                <option value="state1">State 1</option>
+                <option value="state2">State 2</option>
+                </select>
+
+            <label for="program">I want to pursue</label>
+            <select id="program" name="program">
+                <option value="">Select program</option>
+                <option value="program1">Program 1</option>
+                <option value="program2">Program 2</option>
+            </select>
+
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter 10-digit mobile number">
+
+            <button type="submit" value="submit" id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    </header>
+
+    <section class="hero">
+        <p style="color: #f6e640; font-size: 38px; text-align: left;">Your doorway to <br>accountable education </p>
+        <p style="color: #f6e640; text-align: left;">MBA | MCA | BBA | BCA | B.Tech</p>
+        <div class="stats">
+            <div class="stat">
+                <h2>25 LPA</h2>
+                <p>Higher Salary</p>
+            </div>
+            <div class="stat">
+                <h2>2000+</h2>
+                <p>Total Recruiters</p>
+            </div>
+            <div class="stat">
+                <h2>5000+</h2>
+                <p>Students Placed</p>
+            </div>
+        </div>
+        <button class="cta-button">Talk To Our Counsellor</button>
+    </section>
+
+    <section class="student-profiles">
+        <div class="profile">
+            <img src="/images/AdobeStock_1057663535_Preview.jpeg" alt="Student 1">
+            <p>Student 1</p>
+        </div>
+        <div class="profile">
+            <img src="/images/AdobeStock_1062937352_Preview.jpeg" alt="Student 2">
+            <p>Student 2</p>
+        </div>
+        <div class="profile">
+            <img src="/images/AdobeStock_500574027_Preview.jpeg" alt="Student 3">
+            <p>Student 3</p>
+        </div>
+        <div class="profile">
+            <img src="/images/AdobeStock_704394220_Preview.jpeg" alt="Student 4">
+            <p>Student 4</p>
+        </div>
+        <div class="profile">
+            <img src="/images/AdobeStock_704394220_Preview.jpeg" alt="Student 5">
+            <p>Student 5</p>
+        </div>
+        <div class="profile">
+            <img src="/images/AdobeStock_1062937352_Preview.jpeg" alt="Student 6">
+            <p>Student 6</p>
+        </div>
+
+        <div class="container">
+            <div class="left-section">
+                <h1>Kickstart your career with diverse job opportunities</h1>
+                <img src="/images/cape.png" alt="Graduation Cap and Diploma">
+            </div>
+            <div class="right-section">
+                <div>150+ Varied job profile</div>
+                <div>1100+ Unique job opportunities</div>
+                <div>28.5% Students with 2+ job offers</div>
+            </div>
+            <div class="programs">
+                <button>MBA</button>
+                <button>MCA</button>
+                <button>BBA</button>
+                <button>BCA</button>
+                <button>B.Tech</button>
+            </div>
+            <div class="check-eligibility">
+                <button>Check Eligibility ></button>
+            </div>
+        </div>
+
+        <div class="container1">
+            <div class="top-recruiters">TOP RECRUITERS</div>
+            <h1 class="heading">Get placed where you belong</h1>
+            <div class="logo-grid">
+                <div class="logo-item"><img src="/images/micro.jpg" alt="Microsoft"></div>
+                <div class="logo-item"><img src="/images/airtel.jpg" alt="Airtel"></div>
+            
+                <div class="logo-item"><img src="/images/axis.png" alt="Axis Bank"></div>
+                <div class="logo-item"><img src="/images/bajaj.jpg" alt="Bajaj Finserv"></div>
+  
+
+                <div class="logo-item"><img src="/images/hero.png" alt="Hero"></div>
+                <div class="logo-item"><img src="/images/ibm.jpg" alt="IBM"></div>
+                <div class="logo-item"><img src="/images/infos.jpg" alt="Infosys"></div>
+                <div class="logo-item"><img src="/images/kotak.jpg" alt="Kotak"></div>
+
+            </div>
+            
+        </div>
+
+        <div class="container">
+            <section class="awards">
+                <h2>Awards and <br> Recognition</h2>
+                <div class="awards-logos">
+                    <img src="/images/AdobeStock_704394220_Preview.jpeg" alt="Award 1">
+                    <img src="/images/AdobeStock_1062937352_Preview.jpeg" alt="Award 2">
+                    <img src="/images/AdobeStock_500574027_Preview.jpeg" alt="Award 3">
+                </div>
+            </section>
+    
+         
+        </div>
+        <section class="philosophy">
+            <h2>The Sunstone Philosophy</h2>
+            <p>helps you learn from the best and provide a hands-on experience so your education is not just limited to theory</p>
+            <div class="philosophy-steps">
+                <div class="philosophy-step">
+                    <h3>Learn from Recruiters</h3>
+                    <p>CEOs, CTOs, and COOs of Fortune 500 companies and start-ups with years of recruitment experience.</p>
+                </div>
+                <div class="philosophy-step">
+                    <h3>Practise in the Real World</h3>
+                    <p>Gain hands-on experience with internships & real-life projects to be job-ready from Day 1.</p>
+                </div>
+                <div class="philosphy-step">
+                    <h3>Create Your own Portfolio</h3>
+                    <p>Showcase your verified skills and experience with a professional portfolio.</p>
+                </div>
+            </div>
+        </section>
+        <div class="container3">
+            <h2 class="section-title">Practise In The Real World</h2><br>  <p class="section-description">Practise what you learn and develop in-demand skills with real-world opportunities</p>
+         
+    
+            <div class="cards">
+                <div class="card">
+                    <img src="/images/AdobeStock_500574027_Preview.jpeg" alt="Internship">
+                    <h3>6+ months of immersive internships</h3>
+                    <p>Practise the skills you acquire in the classroom with industry internships.</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/images/AdobeStock_500574027_Preview.jpeg" alt="Capstone Project">
+                    <h3>Capstone projects</h3>
+                    <p>Application-based industry-relevant projects to make you job-ready from Day 1.</p>
+                </div>
+    
+                <div class="card">
+                    <img src="/images/AdobeStock_704394220_Preview.jpeg" alt="Industry Visit">
+                    <h3>Industry visits</h3>
+                    <p>Experience how theoretical concepts learnt in class are put into action.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container4">
+            <div class="left-section">
+                <p>APPLY FOR UG AND PG PROGRAMS</p>
+                <h1>Enter a world of Possibilities</h1>
+            </div>
+    
+            <div class="right-section">
+                <h2>Apply for graduate or postgraduate program and shape your career now!</h2>
+                <form id="applicationForm" method="post" action="" name="applicationForm" >
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobileNumber">Mobile Number</label>
+                        <input type="tel" id="mobileNumber" name="mobile" placeholder="Enter 10-digit mobile number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="program">I want to pursue</label>
+                        <select id="program" name="program" required>
+                            <option value="">Select program</option>
+                            <option value="ug">Undergraduate (UG)</option>
+                            <option value="pg">Postgraduate (PG)</option>
+                            <option value="mba">MBA</option>
+                            <option value="engineering">Engineering</option>
+                            </select>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" value="submit" id="submit">Request A Call Back</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="site-map">
+            <h2>Site Map</h2>
+            <ul>
+                <li>
+                    <strong>School of Management</strong>
+                    <a href="#">MBA</a>
+                    <a href="#">PGDM</a>
+                    <a href="#">BBA</a>
+                    <a href="#">Select PGDM</a>
+                    <a href="#">B.Sc. in Hospitality</a>
+                    <a href="#">B.A. in Tourism</a>
+                </li>
+                <li>
+                    <strong>School of Technology</strong>
+                    <a href="#">MCA</a>
+                    <a href="#">BCA</a>
+                    <a href="#">B.Tech</a>
+                    <a href="#">Select B.Tech</a>
+                </li>
+                <li>
+                    <strong>Campuses - Our Presence</strong>
+                    <a href="#">JECRC University - Jaipur</a>
+                    <a href="#">Ajeenkya DY Patil University - Pune</a>
+                    <a href="#">GD Goenka University - Gurgaon</a>
+                    <a href="#">SAGE University - Indore</a>
+                    <a href="#">View All Campuses</a>
+                </li>
+                <li>
+                    <strong>About Sunstone</strong>
+                    <a href="#">Our Team</a>
+                    <a href="#">Placement Team</a>
+                    <a href="#">Our Faculty</a>
+                </li>
+                <li>
+                    <strong>Others</strong>
+                    <a href="#">Sunstone Life</a>
+                    <a href="#">Sunstone Diaries</a>
+                </li>
+            </ul>
+            <div class="download-report">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                        <path d="M.5 8a.5.5 0 0 1 .5-.5V12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V7.5a.5.5 0 0 1 1 0V12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7.5a.5.5 0 0 1 .5.5z"/>
+                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                    </svg>
+                    Download Placement Report
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/images/logo.png" alt="Sunstone Logo">
+            </div>
+            <div class="footer-social">
+                <a href="#"><img src="/images/linkdin.jpg" alt="LinkedIn"></a>
+                <a href="#"><img src="/images/facebook.jpg" alt="Facebook"></a>
+                <a href="#"><img src="/images/insta.jpg" alt="Instagram"></a>
+                <a href="#"><img src="/images/youtube.jpg" alt="YouTube"></a>
+            </div>
+        </div>
+        <div class="footer-contact">
+            <div>
+                <span>Support: Connect@sunstone.in</span>
+                <img src="/images/email.jpg" alt="Email">
+            </div>
+            <div>
+                <span>Call Us: +91 7065-30-30-30</span>
+                <img src="/images/help.png" alt="Phone">
+            </div>
+        </div>
+        <div class="footer-links">
+            <a href="#">Terms of use</a>
+            <a href="#">Grievance Redressal</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Refund Policy</a>
+        </div>
+        <div class="footer-copyright">
+            <span>Copyright © , Sunstone 2025</span>
+            <span>Designed & Developed <img src="path/to/heart-icon.png" alt="Heart"> By Sunstone</span>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Sunstone. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script>
+           
+        document.getElementById('applicationForm1').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const fullName = document.getElementById('fullName').value;
+            const mobile = document.getElementById('mobile').value;
+            const program = document.getElementById('program').value;
+            const state = document.getElementById('state').value;
+            const email = document.getElementById('email').value;
+
+
+            // Basic validation (you can add more robust validation)
+            if (!fullName || !mobile || !program || !email || !state ) {
+                alert('Please fill in all fields.');
+                return;
+            }
+
+            // You can add code here to send the data to a server or perform other actions
+            console.log('Form submitted:', { fullName, mobile, program , email, state });
+
+            alert('Thank you for your interest! We will contact you soon.');
+            document.getElementById('applicationForm1').reset(); // Clear the form
+
+            SubmitEvent.addEventListener('click', () => {
+            applicationForm1.style.closeBtn = 'close';
+        });
+        });
+
+        
+        const applyBtn1 = document.getElementById('applyBtn1');
+     
+ 
+        const applyBtn4 = document.getElementById('applyBtn4');
+        const popupOverlay = document.getElementById('popupOverlay');
+        const closeBtn = document.getElementById('closeBtn');
+        const closeBtn1 = document.getElementById('closeBtn1');
+        
+        const programButton = document.getElementById('programButton');
+        const programPopup = document.getElementById('programPopup');
+
+        applyBtn4.addEventListener('click', () => {
+            popupOverlay.style.display = 'flex';
+        });
+        applyBtn1.addEventListener('click', () => {
+            popupOverlay.style.display = 'flex';
+        });
+    
+
+        closeBtn.addEventListener('click', () => {
+            popupOverlay.style.display = 'none';
+        });
+
+
+        programButton.addEventListener('click', function() {
+            if (programPopup.style.display === 'block') {
+                programPopup.style.display = 'none';
+            } else {
+                programPopup.style.display = 'block';
+            }
+        });
+
+        // Close popup when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!programButton.contains(event.target) && !programPopup.contains(event.target)) {
+                programPopup.style.display = 'none';
+            }
+        });
+        closeBtn1.addEventListener('click', () => {
+            programPopup.style.display = 'none';
+        });
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwlZJiZQ0PcbHa41xAowsEekcM5FnhkVH8WrGWG55e-pcEg27pylk39sHXQm4Vex6s/exec '
+
+const form = document.forms['applicationForm1'];
+const form2 = document.forms['applicationForm']; // Correctly get the second form
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)}) // Uses data from form1
+  .then(response => alert("Thank you! Form is submitted" ))
+  .then(() => {window.location.reload(); })
+  .catch(error => console.error('Error!', error.message));
+});
+
+form2.addEventListener('submit', e => {
+  e.preventDefault();
+  fetch(scriptURL, { method: 'POST', body: new FormData(form2)}) // Should use data from form2
+  .then(response => alert("Thank you! Form is submitted" ))
+  .then(() => {window.location.reload(); })
+  .catch(error => console.error('Error!', error.message));
+});
+
+    </script>
+</body>
+</html>
