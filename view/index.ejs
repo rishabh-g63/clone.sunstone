@@ -18,20 +18,21 @@
                         <span class="popup-close" id="closeBtn1">&times;</span>
                         <ul>
                             <li><strong>School of Management</strong></li>
-                            <li style="color: #b5a711;">MBA</li>
-                            <li style="color: #b5a711;">BBA</li>
-                            <li style="color: #b5a711;">PGDM</li>
-                            <li style="color: #b5a711 ">Select PGDM</li>
-                            <li style="color: #b5a711; ">B.Sc. in Hospitality</li>
-                            <li style="color: #b5a711;">B.A. in Tourism</li>
+                            <li ><a href="/view/mba.ejs" style="color: #b5a711;">MBA</a></li>
+                            <li ><a href="/view/bba.ejs" style="color: #b5a711;" >BBA</a></li>
+                            <li ><a href="/view/pgdm.ejs" style="color: #b5a711;">PGDM</a></li>
+                            <li ><a href="/view/bsc.ejs" style="color: #b5a711;">B.Sc. In Hospitality</a></li>
+                            <li ><a href="/view/ba.ejs" style="color: #b5a711;">BA In Tourism</a></li>
                         </ul>
                         <ul>
                             <li><strong>School of Technology</strong></li>
-                            <li style="color: #b5a711;">MCA</li>
-                            <li style="color: #b5a711;">BCA</li>
-                            <li style="color: #b5a711;">B.Tech</li>
-                            <li style="color: #b5a711;">Select B.Tech</li>
+                            <li ><a href="/view/mca.ejs" style="color: #b5a711;">MCA</a></li>
+                            <li ><a href="/view/bca.ejs" style="color: #b5a711;">BCA</a></li>
+                            <li ><a href="/view/btech.ejs" style="color: #b5a711;">B.TECH</a></li>
+    
                         </ul>
+                        
+
                     </div>
                 </div>
                 <li><a href="/view/2.ejs" class="apply-button1">All Colleges</a></li>
@@ -95,7 +96,7 @@
                 <p>Students Placed</p>
             </div>
         </div>
-        <button class="cta-button">Talk To Our Counsellor</button>
+        <button class="cta-button" id="applyBtn6">Talk To Our Counsellor</button>
     </section>
 
     <section class="student-profiles">
@@ -123,6 +124,7 @@
             <img src="/images/AdobeStock_1062937352_Preview.jpeg" alt="Student 6">
             <p>Student 6</p>
         </div>
+        
 
         <div class="container">
             <div class="left-section">
@@ -135,14 +137,14 @@
                 <div>28.5% Students with 2+ job offers</div>
             </div>
             <div class="programs">
-                <button>MBA</button>
-                <button>MCA</button>
-                <button>BBA</button>
-                <button>BCA</button>
-                <button>B.Tech</button>
+              <form action="/view/mba.ejs" method="get"> <button>MBA</button></form>
+              <form action="/view/mca.ejs" method="get"><button>MCA</button></form>
+              <form action="/view/bba.ejs" method="get"> <button>BBA</button></form>
+                <form action="/view/mca.ejs" method="get"> <button>BCA</button></form>
+                    <form action="/view/btech.ejs" method="get"> <button>B.Tech</button></form>
             </div>
             <div class="check-eligibility">
-                <button>Check Eligibility ></button>
+                <button  id="applyBtn7">Check Eligibility ></button>
             </div>
         </div>
 
@@ -196,6 +198,8 @@
                 </div>
             </div>
         </section>
+
+        
         <div class="container3">
             <h2 class="section-title">Practise In The Real World</h2><br>  <p class="section-description">Practise what you learn and develop in-demand skills with real-world opportunities</p>
          
@@ -254,32 +258,92 @@
                 </form>
             </div>
         </div>
+        <h2 class="hh">BA colleges (3) to explore</h2>
+
+    <div class="college-list">
+        <div class="college-card">
+            <svg class="wishlist-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            <img src="/images/AdobeStock_704394220_Preview.jpeg" alt="Aditya University" class="college-card-image">
+            <div class="college-card-body">
+                <h3 class="college-title">Aditya University, Kakinada</h3>
+                <p class="college-program">BA Program | UGC Recognised</p>
+                <ul class="college-features">
+                    <li><svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 6 Specialisations Offered</li>
+                    <li><svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><award></award></svg> 10 Advanced Certifications</li>
+                </ul>
+                <p class="college-fees">Total Fees ₹3.10 Lacs</p>
+                <div class="college-actions">
+                    <a href="#" class="action-button">Hurry! Book a college tour now!</a>
+                    <a href="#" class="action-button tour">Book Tour</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="college-card">
+            <svg class="wishlist-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            <img src="/images/AdobeStock_500574027_Preview.jpeg" alt="JECRC University" class="college-card-image">
+            <div class="college-card-body">
+                <h3 class="college-title">JECRC University, Jaipur</h3>
+                <p class="college-program">BA Program | AICTE Approved</p>
+                <ul class="college-features">
+                    <li><svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 6 Specialisations Offered</li>
+                    <li><svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><award></award></svg> 10 Advanced Certifications</li>
+                </ul>
+                <p class="college-fees">Total Fees ₹3.40 Lacs</p>
+                <div class="college-actions">
+                    <a href="#" class="action-button">Hurry! Book a college tour now!</a>
+                    <a href="#" class="action-button tour">Book Tour</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="college-card">
+            <svg class="wishlist-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            <img src="/images/AdobeStock_1062937352_Preview.jpeg" alt="Ajeenkya DY Patil University" class="college-card-image">
+            <div class="college-card-body">
+                <h3 class="college-title">Ajeenkya DY Patil University, Pune</h3>
+                <p class="college-program">BA Program | UGC Recognised</p>
+                <ul class="college-features">
+                    <li><svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 3 Specialisations Offered</li>
+                    <li><svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><award></award></svg> 10 Advanced Certifications</li>
+                </ul>
+                <p class="college-fees">Total Fees ₹3.88 Lacs</p>
+                <div class="college-actions">
+                    <a href="#" class="action-button">Hurry! Book a college tour now!</a>
+                    <a href="#" class="action-button tour">Book Tour</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
         <div class="site-map">
             <h2>Site Map</h2>
             <ul>
                 <li>
                     <strong>School of Management</strong>
-                    <a href="#">MBA</a>
-                    <a href="#">PGDM</a>
-                    <a href="#">BBA</a>
-                    <a href="#">Select PGDM</a>
-                    <a href="#">B.Sc. in Hospitality</a>
-                    <a href="#">B.A. in Tourism</a>
+                    <a href="/view/mba.ejs" >MBA</a>
+                    <a href="/view/pgdm.ejs">PGDM</a>
+                    <a href="/view/bba.ejs">BBA</a>
+                    <a href="/view/pgdm.ejs">Select PGDM</a>
+                    <a href="/view/bsc.ejs">B.Sc. in Hospitality</a>
+                    <a href="/view/ba.ejs">B.A. in Tourism</a>
                 </li>
                 <li>
                     <strong>School of Technology</strong>
-                    <a href="#">MCA</a>
-                    <a href="#">BCA</a>
-                    <a href="#">B.Tech</a>
-                    <a href="#">Select B.Tech</a>
+                    <a href="/view/mca.ejs">MCA</a>
+                    <a href="/view/bca.ejs">BCA</a>
+                    <a href="/view/btech.ejs">B.Tech</a>
+                    <a href="/view/btech.ejs">Select B.Tech</a>
                 </li>
                 <li>
                     <strong>Campuses - Our Presence</strong>
-                    <a href="#">JECRC University - Jaipur</a>
-                    <a href="#">Ajeenkya DY Patil University - Pune</a>
-                    <a href="#">GD Goenka University - Gurgaon</a>
-                    <a href="#">SAGE University - Indore</a>
-                    <a href="#">View All Campuses</a>
+                    <a href="/view/2.ejs">JECRC University - Jaipur</a>
+                    <a href="/view/2.ejs">Ajeenkya DY Patil University - Pune</a>
+                    <a href="/view/2.ejs">GD Goenka University - Gurgaon</a>
+                    <a href="/view/2.ejs">SAGE University - Indore</a>
+                    <a href="/view/2.ejs">View All Campuses</a>
                 </li>
                 <li>
                     <strong>About Sunstone</strong>
@@ -375,8 +439,11 @@
 
         
         const applyBtn1 = document.getElementById('applyBtn1');
+        
+        const applyBtn6 = document.getElementById('applyBtn6');
      
- 
+        const applyBtn7 = document.getElementById('applyBtn7');
+
         const applyBtn4 = document.getElementById('applyBtn4');
         const popupOverlay = document.getElementById('popupOverlay');
         const closeBtn = document.getElementById('closeBtn');
@@ -389,6 +456,12 @@
             popupOverlay.style.display = 'flex';
         });
         applyBtn1.addEventListener('click', () => {
+            popupOverlay.style.display = 'flex';
+        });
+        applyBtn6.addEventListener('click', () => {
+            popupOverlay.style.display = 'flex';
+        });
+        applyBtn7.addEventListener('click', () => {
             popupOverlay.style.display = 'flex';
         });
     

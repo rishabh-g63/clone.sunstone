@@ -28,8 +28,33 @@ app.get('/view/3.ejs', (req, res) => {
 app.get('/view/4.ejs', (req, res) => {
   res.render('4');
 });
-
-
+app.get('/view/mba.ejs', (req, res) => {
+  res.render('mba');
+});
+app.get('/view/pgdm.ejs', (req, res) => {
+  res.render('pgdm');
+});
+app.get('/view/mca.ejs', (req, res) => {
+  res.render('mca');
+});
+app.get('/view/btech.ejs', (req, res) => {
+  res.render('btech');
+});
+app.get('/view/bsc.ejs', (req, res) => {
+  res.render('bsc');
+});
+app.get('/view/bca.ejs', (req, res) => {
+  res.render('bca');
+});
+app.get('/view/bba.ejs', (req, res) => {
+  res.render('bba');
+});
+app.get('/view/ba.ejs', (req, res) => {
+  res.render('ba');
+});
+app.get('/view/docu.ejs', (req, res) => {
+  res.render('docu');
+});
 // Server ko chalayein
 const port = 3000;
 app.listen(port, () => {
