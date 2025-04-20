@@ -222,36 +222,704 @@
             top: 10px;
             right: 40px;
         }
+        header {
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+        .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+nav {
+    display: flex; /* To align the apply button and menu button */
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.apply-button1 {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.apply-button2 {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}.apply-button4 {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}.apply-button3 {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.apply-button {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    right: 0;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #3366cc; /* Blue button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    justify-content: center;
+    align-items: center;
+    z-index: +1;
+}
+.container9 {
+    display: none;
+    position: fixed;
+    bottom: 50%;
+    right: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    justify-content: center;
+    align-items: center;
+    z-index: +1;
+}
+
+  
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.popup-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.popup-content label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.popup-content input, .popup-content select {
+    width: calc(100% - 12px); /* Adjust for padding and border */
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.popup-content button {
+    background-color: #3366cc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.container9 {
+    width: 0%;
+    height: 0vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+.program-button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    z-index: 1000;
+}
+
+.popup ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.popup ul li {
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+.popup ul li:hover {
+    background-color: #f0f0f0;
+}
+.menu-toggle {
+    display: none; /* डिफ़ॉल्ट रूप से छिपा हुआ */
+    flex-direction: column;
+    cursor: pointer;
+}
+.menu-toggle {
+    display: none; /* डिफ़ॉल्ट रूप से छिपा हुआ */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.mobile-menu {
+    display: none; /* डिफ़ॉल्ट रूप से छिपा हुआ */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 60px; /* navbar की ऊँचाई के नीचे */
+    left: 0;
+    z-index: 10;
+}
+
+.mobile-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+.site-map {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.site-map h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+}
+
+.site-map ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.site-map li {
+    width: 20%;
+    margin-bottom: 20px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.site-map li a {
+    text-decoration: none;
+    color: #09111a;
+    display: block;
+    padding: 5px 0;
+}
+
+.site-map li a:hover {
+    text-decoration: underline;
+}
+
+.site-map .download-report {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.site-map .download-report a {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.site-map .download-report a:hover {
+    background-color: #0056b3;
+}
+
+.site-map .download-report a svg {
+    margin-right: 8px;
+}
+
+.footer {
+    background-color: #f0f0f0; /* Light grey background */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.footer-logo img {
+    max-height: 40px; /* Adjust as needed */
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: #007bff; /* Blue color for social icons */
+    text-decoration: none;
+}
+
+.footer-social a img {
+    max-height: 25px; /* Adjust as needed */
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%; /* Full width on smaller screens */
+}
+
+.footer-contact div {
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-contact div img {
+    margin-left: 10px;
+    max-height: 20px; /* Adjust as needed */
+}
+
+.footer-links {
+    margin-top: 20px;
+    width: 100%; /* Full width on smaller screens */
+}
+
+.footer-links a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+    width: 100%; /* Full width on smaller screens */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copyright span {
+    color: #666;
+    font-size: 0.9em;
+}
+
+        @media (max-width: 767px) {
+    body {
+        padding: 10px; /* कम पैडिंग */
+        margin: 0; /* बॉडी मार्जिन हटाएं */
+    }
+
+    .container {
+        max-width: 100%; /* पूरी चौड़ाई लें */
+        margin: 20px 0 0; /* ऊपर मार्जिन और किनारों पर कोई मार्जिन नहीं */
+        padding: 20px; /* कम पैडिंग */
+        border-radius: 0; /* कोनों को सीधा करें */
+        box-shadow: none; /* शैडो हटाएं */
+    }
+
+    h1 {
+        font-size: 2em; /* छोटा फ़ॉन्ट आकार */
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 0.9em; /* छोटा फ़ॉन्ट आकार */
+        margin-bottom: 15px;
+    }
+
+    .highlights-grid {
+        flex-direction: column; /* एक कार्ड प्रति पंक्ति */
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .highlight-card {
+        flex-basis: 100%; /* पूरी चौड़ाई लें */
+        padding: 10px 15px;
+    }
+
+    .highlight-card strong {
+        font-size: 1.3em;
+        margin-bottom: 3px;
+    }
+
+    .highlight-card span {
+        font-size: 0.85em;
+    }
+
+    .offerings-container {
+        max-width: 100%; /* पूरी चौड़ाई लें */
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 0; /* कोनों को सीधा करें */
+        box-shadow: none; /* शैडो हटाएं */
+    }
+
+    h2 {
+        font-size: 1.8em; /* छोटा फ़ॉन्ट आकार */
+        margin-bottom: 15px;
+    }
+
+    .offerings-grid {
+        grid-template-columns: 1fr; /* एक कॉलम */
+        gap: 15px;
+    }
+
+    .offering-item {
+        flex-direction: column; /* आइकन और टेक्स्ट को लंबवत रूप से व्यवस्थित करें */
+        align-items: flex-start;
+        gap: 5px;
+        padding: 8px;
+    }
+
+    .offering-icon {
+        font-size: 1em; /* छोटा आइकन आकार */
+    }
+
+    .offering-text {
+        font-size: 0.9em;
+    }
+
+    .right-section {
+        grid-template-columns: 1fr; /* एक कॉलम */
+        grid-gap: 15px;
+    }
+
+    .right-section div {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+
+    .college-list {
+        grid-template-columns: 1fr; /* एक कॉलम */
+        gap: 15px;
+    }
+
+    .college-card {
+        border-radius: 0; /* कोनों को सीधा करें */
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* हल्की शैडो */
+    }
+
+    .college-card-image {
+        height: 150px; /* छोटी ऊंचाई */
+    }
+
+    .college-title {
+        font-size: 16px; /* छोटा फ़ॉन्ट आकार */
+    }
+
+    .college-program,
+    .college-features li,
+    .college-fees,
+    .action-button {
+        font-size: 12px; /* छोटा फ़ॉन्ट आकार */
+    }
+
+    .college-actions {
+        flex-direction: column; /* बटन को लंबवत रूप से व्यवस्थित करें */
+        gap: 5px;
+    }
+
+    .action-button {
+        width: 100%; /* पूरी चौड़ाई लें */
+    }
+
+    .wishlist-icon {
+        font-size: 18px; /* छोटा आइकन आकार */
+        top: 8px;
+        right: 8px;
+    }
+
+    .wishlist-counter {
+        font-size: 14px; /* छोटा काउंटर आकार */
+        top: 8px;
+        right: 30px;
+    }
+
+    .footnote {
+        font-size: 0.75em; /* और भी छोटा फ़ॉन्ट आकार */
+    }
+    nav {
+        width: 100%;
+        justify-content: space-between; /* Push apply button to the right */
+    }
+
+    nav ul {
+        display: none; /* Hide the main menu on mobile */
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav li {
+        margin-left: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .logo{
+        position: relative;
+        top: -20px;
+        left: 10px;
+    }
+    .menu-button {
+        background: none;
+        border: none;
+        color: #333;
+        font-size: 1.2em;
+        cursor: pointer;
+        padding: -30px;
+        display: block; /* Show the menu button on mobile */
+    }
+    
+
+
+    .nav-links {
+            display: none; /* लैपटॉप पर छिपाएँगे */
+        }
+        .menu-toggle {
+            display: flex; /* मोबाइल पर दिखाएँगे */
+            position: relative;
+            width: 100%;
+            height: 100%;
+            left: -120%;
+            bottom: -30px;
+
+
+
+        }
+        .bar{
+            display: flex;
+        }
+        .mobile-menu.open {
+            display: block; /* जब मेनू टॉगल क्लिक किया जाए तो दिखाएँ */
+        }
+        .popup-close{
+            position: relative;
+            top: -300px;
+            right: -40%;
+        }
+        .mobile-menu {
+            display: none;
+          }
+          .popup-overlay{
+            z-index: +1;
+            left: 0%;
+            
+          }
+
+          .site-map{
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+
+    .site-map ul {
+        flex-direction: column; /* Stack site map links vertically */
+        align-items: center;
+    }
+
+    .site-map li {
+        width: 100%; /* Adjust width for mobile */
+        text-align: center;
+    }
+
+    .footer-content, .footer-contact, .footer-links, .footer-copyright {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-contact div {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+          
+          
+          
+   
+}
         
 
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>BBA Course Highlights</h1>
-        <p>Develop leadership & managerial skills with a holistic view of business in marketing, finance or operations</p>
+    <header>
+        <div class="logo">SUNSTONE</div>
+        <nav>
+            <ul>
+                <li><a href="#" class="program-button" id="programButton">Programs</a></li>
+                <div class="container9">
+                    <div class="popup" id="programPopup">
+                        <span class="popup-close" id="closeBtn1">&times;</span>
+                        <ul>
+                            <li><strong>School of Management</strong></li>
+                            <li ><a href="/view/mba.ejs" style="color: #b5a711;">MBA</a></li>
+                            <li ><a href="/view/bba.ejs" style="color: #b5a711;" >BBA</a></li>
+                            <li ><a href="/view/pgdm.ejs" style="color: #b5a711;">PGDM</a></li>
+                            <li ><a href="/view/bsc.ejs" style="color: #b5a711;">B.Sc. In Hospitality</a></li>
+                            <li ><a href="/view/ba.ejs" style="color: #b5a711;">BA In Tourism</a></li>
+                        </ul>
+                        <ul>
+                            <li><strong>School of Technology</strong></li>
+                            <li ><a href="/view/mca.ejs" style="color: #b5a711;">MCA</a></li>
+                            <li ><a href="/view/bca.ejs" style="color: #b5a711;">BCA</a></li>
+                            <li ><a href="/view/btech.ejs" style="color: #b5a711;">B.TECH</a></li>
+    
+                        </ul>
+                        
 
-        <div class="highlights-grid">
-            <div class="highlight-card">
-                <strong>2</strong>
-                <span>YEAR FULL TIME PROGRAM</span>
+                    </div>
+                </div>
+                <li><a href="/view/2.ejs" class="apply-button1">All Colleges</a></li>
+                <li><a href="#" class="apply-button2" id="applyBtn9">Shortlisted Colleges</a></li>
+                <li><a href="/view/3.ejs" class="apply-button3" >Sunstone SELECT</a></li>
+                <li><a href="/view/4.ejs" class="apply-button4">Hire From Sunstone</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <div class="bar"><img src="/images/icons8-menu-50.png" ></div>
+        
             </div>
-            <div class="highlight-card">
-                <strong>6+</strong>
-                <span>SPECIALISATIONS OFFERED*</span>
-            </div>
-            <div class="highlight-card">
-                <strong>6+</strong>
-                <span>MONTHS OF INTERNSHIPS*</span>
-            </div>
-            <div class="highlight-card">
-                <strong>4</strong>
-                <span>CAPSTONE PROJECTS</span>
-            </div>
+            <ul class="mobile-menu">
+                
+                <li><a href="/view/2.ejs" class="apply-button1">All Colleges</a></li>
+                <li><a href="/view/3.ejs" class="apply-button3" >Sunstone SELECT</a></li>
+                <li><a href="/view/4.ejs" class="apply-button4">Hire From Sunstone</a></li>
+
+               
+            </ul>
+            
+
+        </nav>
+        <button class="apply-button" id="applyBtn4">Apply Now</button>
+
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-content">
+            <span class="popup-close1" id="closeBtn">&times;</span>
+            <h2>Welcome to Sunstone!</h2>
+            <p>Please enter your details to register</p>
+            <form id="applicationForm1" method="post" action="" name="applicationForm1" >
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your name">
+
+            <label for="email">Email ID</label>
+            <input type="email" id="email" name="email" placeholder="eg. riya@gmail.com">
+
+            <label for="state">Select State</label>
+            <select id="state" name="state" >
+                <option value="">Select your state</option>
+                <option value="state1">State 1</option>
+                <option value="state2">State 2</option>
+                </select>
+
+            <label for="program">I want to pursue</label>
+            <select id="program" name="program">
+                <option value="">Select program</option>
+                <option value="program1">Program 1</option>
+                <option value="program2">Program 2</option>
+            </select>
+
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter 10-digit mobile number">
+
+            <button type="submit" value="submit" id="submit">Submit</button>
+            </form>
         </div>
-
-        <p class="footnote">*Subject to campus guidelines</p>
     </div>
+
+    </header>
     <h2>BBA colleges (3) to explore</h2>
 
     <div class="college-list">
@@ -311,9 +979,34 @@
     </div>
 </div>
     <div class="container">
+        <h1>BBA Course Highlights</h1>
+        <p>Develop leadership & managerial skills with a holistic view of business in marketing, finance or operations</p>
+
+        <div class="highlights-grid">
+            <div class="highlight-card">
+                <strong>2</strong>
+                <span>YEAR FULL TIME PROGRAM</span>
+            </div>
+            <div class="highlight-card">
+                <strong>6+</strong>
+                <span>SPECIALISATIONS OFFERED*</span>
+            </div>
+            <div class="highlight-card">
+                <strong>6+</strong>
+                <span>MONTHS OF INTERNSHIPS*</span>
+            </div>
+            <div class="highlight-card">
+                <strong>4</strong>
+                <span>CAPSTONE PROJECTS</span>
+            </div>
+        </div>
+
+        <p class="footnote">*Subject to campus guidelines</p>
+    </div>
+    
+    <div class="container">
         <div class="left-section">
             <h1>Kickstart your career with diverse job opportunities</h1>
-            <img src="/images/cape.png" alt="Graduation Cap and Diploma">
         </div>
         <div class="right-section">
             <div>150+ Varied job profile</div>
@@ -348,6 +1041,178 @@
                 </div>
                 </div>
         </div>
+        <div class="site-map">
+            <h2>Site Map</h2>
+            <ul>
+                <li>
+                    <strong>School of Management</strong>
+                    <a href="/view/mba.ejs" >MBA</a>
+                    <a href="/view/pgdm.ejs">PGDM</a>
+                    <a href="/view/bba.ejs">BBA</a>
+                    <a href="/view/pgdm.ejs">Select PGDM</a>
+                    <a href="/view/bsc.ejs">B.Sc. in Hospitality</a>
+                    <a href="/view/ba.ejs">B.A. in Tourism</a>
+                </li>
+                <li>
+                    <strong>School of Technology</strong>
+                    <a href="/view/mca.ejs">MCA</a>
+                    <a href="/view/bca.ejs">BCA</a>
+                    <a href="/view/btech.ejs">B.Tech</a>
+                    <a href="/view/btech.ejs">Select B.Tech</a>
+                </li>
+                <li>
+                    <strong>Campuses - Our Presence</strong>
+                    <a href="/view/2.ejs">JECRC University - Jaipur</a>
+                    <a href="/view/2.ejs">Ajeenkya DY Patil University - Pune</a>
+                    <a href="/view/2.ejs">GD Goenka University - Gurgaon</a>
+                    <a href="/view/2.ejs">SAGE University - Indore</a>
+                    <a href="/view/2.ejs">View All Campuses</a>
+                </li>
+                <li>
+                    <strong>About Sunstone</strong>
+                    <a href="#">Our Team</a>
+                    <a href="#">Placement Team</a>
+                    <a href="#">Our Faculty</a>
+                </li>
+                <li>
+                    <strong>Others</strong>
+                    <a href="#">Sunstone Life</a>
+                    <a href="#">Sunstone Diaries</a>
+                </li>
+            </ul>
+            <div class="download-report">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                        <path d="M.5 8a.5.5 0 0 1 .5-.5V12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V7.5a.5.5 0 0 1 1 0V12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7.5a.5.5 0 0 1 .5.5z"/>
+                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                    </svg>
+                    Download Placement Report
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/images/logo.png" alt="Sunstone Logo">
+            </div>
+            <div class="footer-social">
+                <a href="#"><img src="/images/linkdin.jpg" alt="LinkedIn"></a>
+                <a href="#"><img src="/images/facebook.jpg" alt="Facebook"></a>
+                <a href="#"><img src="/images/insta.jpg" alt="Instagram"></a>
+                <a href="#"><img src="/images/youtube.jpg" alt="YouTube"></a>
+            </div>
+        </div>
+        <div class="footer-contact">
+            <div>
+                <span>Support: Connect@sunstone.in</span>
+                <img src="/images/email.jpg" alt="Email">
+            </div>
+            <div>
+                <span>Call Us: +91 7065-30-30-30</span>
+                <img src="/images/help.png" alt="Phone">
+            </div>
+        </div>
+        <div class="footer-links">
+            <a href="#">Terms of use</a>
+            <a href="#">Grievance Redressal</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Refund Policy</a>
+        </div>
+        <div class="footer-copyright">
+            <span>Copyright © , Sunstone 2025</span>
+            <span>Designed & Developed <img src="path/to/heart-icon.png" alt="Heart"> By Sunstone</span>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Sunstone. All rights reserved.</p>
+    </footer>
+
+        <script>
+            const programButton = document.getElementById('programButton');
+        const programPopup = document.getElementById('programPopup');
+        const closeBtn1 = document.getElementById('closeBtn1');
+    
+    
+    
+        programButton.addEventListener('click', function() {
+    if (programPopup.style.display === 'block') {
+    programPopup.style.display = 'none';
+    } else {
+    programPopup.style.display = 'block';
+    }
+    });
+    
+    
+        // Close popup when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!programButton.contains(event.target) && !programPopup.contains(event.target)) {
+                programPopup.style.display = 'none';
+            }
+        });
+        closeBtn1.addEventListener('click', () => {
+            programPopup.style.display = 'none';
+        });
+        const menuToggle = document.querySelector('.menu-toggle');
+const mobileMenu = document.querySelector('.mobile-menu');
+const closeBtn2 = document.getElementById('closeBtn2');
+
+menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+});
+const applyBtn4 = document.getElementById('applyBtn4');
+        const popupOverlay = document.getElementById('popupOverlay');
+        const closeBtn = document.getElementById('closeBtn');   
+
+        applyBtn4.addEventListener('click', () => {
+            popupOverlay.style.display = 'flex';
+        });
+        closeBtn.addEventListener('click', () => {
+            popupOverlay.style.display = 'none';
+        });
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwlZJiZQ0PcbHa41xAowsEekcM5FnhkVH8WrGWG55e-pcEg27pylk39sHXQm4Vex6s/exec '
+document.getElementById('applicationForm1').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const fullName = document.getElementById('fullName').value;
+            const mobile = document.getElementById('mobile').value;
+            const program = document.getElementById('program').value;
+            const state = document.getElementById('state').value;
+            const email = document.getElementById('email').value;
+            const form = document.forms['applicationForm1'];
+            
+
+
+            // Basic validation (you can add more robust validation)
+            if (!fullName || !mobile || !program || !email || !state ) {
+                alert('Please fill in all fields.');
+                return;
+            }
+
+            // You can add code here to send the data to a server or perform other actions
+            
+
+            form.addEventListener('submit', e => {
+           e.preventDefault();
+           fetch(scriptURL, { method: 'POST', body: new FormData(form)}) // Uses data from form1
+          .then(response => alert("Thank you! Form is submitted"  ))
+         .then(() => {window.location.reload(); })
+         .catch(error => console.error('Error!', error.message));
+
+         console.log('Form submitted:', { fullName, mobile, program , email, state });
+
+
+});
+
+            form.addEventListener('click', () => {
+            applicationForm1.style.closeBtn = 'close';
+        });
+        });
+
+        </script>
     
 </body>
 </html>

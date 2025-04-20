@@ -86,6 +86,7 @@
         /* Placeholder for icons - replace with actual icon elements or images */
         .icon {
             display: inline-block;
+            text-decoration-color: #2e3b4e;
             width: 20px;
             height: 20px;
             background-color: #1e88e5; /* Placeholder color */
@@ -106,18 +107,27 @@
             -webkit-mask-size: contain;
             mask-size: contain;
         }
+        @media (max-width: 768px){
+            .hero-section{
+                padding: 20px;
+                width: 100%;
+            
+            }
+            
+            
+        }
     </style>
 </head>
 <body>
     <div class="hero-section">
-        <h1>Experience Transformative Learning with us!</h1>
+        <h1>Experience   Transformative Learning with us!</h1>
         <p>Unlock your true potential with Sunstone Select's 3D model to succeed in the real world!</p>
         <div class="program-buttons">
             <button class="program-button">
-                <span class="icon"></span> B.Tech
+              <a href="/view/btech.ejs">  <span class="icon" ></span> B.Tech</a>
             </button>
             <button class="program-button">
-                <span class="icon icon-pgdm"></span> PGDM
+                <a href="/view/pgdm.ejs">  <span class="icon icon-pgdm"></span> PGDM</a>
             </button>
         </div>
         <div class="partner-colleges">
@@ -125,18 +135,14 @@
             Our Partner Colleges
         </div>
         <div class="college-logos">
-            <div class="college-logo">
-                <img src="/images/AdobeStock_1057663535_Preview.jpeg" alt="KIIT">
-            </div>
+            
             <div class="college-logo">
                 <img src="/images/AdobeStock_500574027_Preview.jpeg" alt="Ajeenkya">
             </div>
             <div class="college-logo">
                 <img src="/images/AdobeStock_500574027_Preview.jpeg" alt="University">
             </div>
-            <div class="college-logo">
-                <img src="/images/AdobeStock_1057663535_Preview.jpeg" alt="Sushant">
-            </div>
+           
         </div>
     </div>
 </body>
